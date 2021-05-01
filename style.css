@@ -82,7 +82,7 @@ section {
   font-weight: 300;
 }
 
-#button {
+.button {
   width: 155px;
   outline: none;
   border: 1px solid rgba(255,255,255,.2);
