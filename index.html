@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <title>Calculadora de Regras de Três</title>
+  <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+</head>
+<body>
+  <section>
+    <div class="box">
+      <h1>Calculadora de Regras de Três</h1>
+      <form>
+        <div class="fragment">
+          <input type="number" class="number" id="a" value="" onkeyup="main(numbers[0].value, numbers[1].value, numbers[2].value)" />
+          <div class="line">
+            -
+          </div>
+          <input type="number" class="number" id="b" value="" onkeyup="main(numbers[0].value, numbers[1].value, numbers[2].value)" />
+        </div>
+        <div class="fragment" style="font-size:30pt; color:#fff;">
+          =
+        </div>
+        <div class="fragment">
+          <input type="number" class="number" id="c" value="" onkeyup="main(numbers[0].value, numbers[1].value, numbers[2].value)" />
+          <div class="line">
+            -
+          </div>
+          <input type="text" class="number" id="x" value="x" readonly />
+        </div>
+        <br />
+        <input type="button" id="button" value="Mostrar Cálculo" onclick="show(numbers[0].value, numbers[1].value, numbers[2].value)" />
+      </form>
+      <div id="result"></div>
+    </div>
+  </section>
+  <script src="main.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>
