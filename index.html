@@ -28,7 +28,11 @@
           <input type="text" class="number" id="x" value="x" readonly />
         </div>
         <br />
-        <input type="button" id="button" value="Mostrar Cálculo" onclick="show(numbers[0].value, numbers[1].value, numbers[2].value)" />
+        <select id="proportionality" class="button" onchange="main(numbers[0].value, numbers[1].value, numbers[2].value)">
+          <option value="directly">Diretamente Proporcional</option>
+          <option value="inversely">Inversamente Proporcional</option>
+        </select>
+        <input type="button" class="button" value="Mostrar Cálculo" onclick="show(numbers[0].value, numbers[1].value, numbers[2].value)" />
       </form>
       <div id="result"></div>
     </div>
